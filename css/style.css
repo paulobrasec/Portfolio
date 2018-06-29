@@ -9,7 +9,7 @@ ul {list-style: none;}
 img {max-width: 100%}
 
 /* CABECALHO */
-.cabecalho {width: 100%; padding: 5%}
+header {width: 100%; padding: 5%}
 .btn-menu {width: 25px; height: 16px; cursor: pointer; background: url('../img/menu.svg') 0 0 no-repeat}
 
 /* MENU */
@@ -17,4 +17,12 @@ img {max-width: 100%}
 .btn-close {width: 19px; height: 19px; cursor: pointer; margin: 5%; background: url('../img/close.svg') 0 0 no-repeat;}
 .menu ul {width: 100%; text-align: center;} 
 .menu li {padding: 3%;}
-.menu li a {font-size: 1rem; font-weight: 300; color: #333;}
+.menu li a {font-size: 1rem; font-weight: 300; color: #333; text-transform: uppercase}
+
+/* FOTOS */
+.gallery{ width: 100%; display: flex; flex-wrap: wrap;}
+.gallery li{ height: 215px; padding: 0px; margin: 2.5% 0 2.5% 0; background-clip: content-box; background-size: cover; background-position: center; flex-basis: 100%;}
+
+@media (min-width: 540px) {.gallery li {flex-basis: 50%;}} 
+@media (min-width: 768px) {.gallery li {flex-basis: 47%; margin: 1.5% 1.5%; }  .gallery {max-width: 768px; margin: 0px auto;}}
+@media (min-width: 1024px) {.gallery li {flex-basis: 23%; margin: 1%;} .gallery{max-width: 900px; margin: 0px auto;}}
