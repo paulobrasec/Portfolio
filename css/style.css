@@ -9,8 +9,8 @@ ul {list-style: none;}
 img {max-width: 100%}
 
 /* CABECALHO */
-header {width: 100%; padding: 5%}
-.btn-menu {width: 25px; height: 16px; cursor: pointer; background: url('../img/menu.svg') 0 0 no-repeat}
+header {width: 100%; padding:5%;}
+.btn-menu {width: 25px; height: 16px;cursor: pointer; background: url('../img/menu.svg') 0 0 no-repeat}
 
 /* MENU */
 .menu {display: none; width: 100%; height: 100%; position: fixed; background-color: #fff; top: 0; left: 0;}
@@ -28,19 +28,24 @@ hr{ background-color: #ccc; height: 1px; margin: 20% 0; opacity: 0.2;}
 .gallery li{ height: 215px; padding: 0px; margin: 1.5% 0 1.5% 0; background-clip: content-box; background-size: cover; background-position: center; flex-basis: 100%;}
 
 
-@media screen and (min-width: 540px) {.gallery li {flex-basis: 50%;}} 
-@media screen and (min-width: 768px) {.gallery li {flex-basis: 47%; margin: 1% 1%; }  .gallery {max-width: 720px; margin: 0px auto;}}
-@media screen and (min-width: 1080px) {.gallery li {flex-basis: 23%; margin: 0.5%; height: 150px;} .gallery{max-width: 1080px; margin: 0px auto;}}
+.flex_box{display:flex; flex-wrap: wrap;}
 
+/* BREAKPOINT DO PAULO PIMENTEL */
+@media(min-width: 20rem) {.content { width: 100%;}.flex_box_item{ flex-basis: 100%; margin-bottom: 4%}}
+@media(min-width: 33.75rem) {.flex_box_item{ height: 360px !important; flex-basis: 100%; margin-bottom: 4%;}}
+@media(min-width: 48rem) {.flex_box_item{ height: 255px !important; flex-basis: 48%; margin:1%;}}
+@media(min-width: 64rem) {.content{ width: 82%; margin: 0 auto;} .flex_box_item{ height: 135px !important; flex-basis: 24%; margin: 0.5%} hr{ display: none;}
 
-@media screen and (min-width: 1280px) {
-hr{display: none;}
-header{ display: flex; justify-content: center; margin:0; padding: 4%; }
+header{ display: flex; justify-content: center; margin:0; padding: 4% 0; }
 .btn-menu {display: none;}
 .btn-close {display: none;}
-.menu {display: inline-flex !important; position: static; max-width: 1080px;}
+.menu {display: inline-flex !important; position: static;}
 .social {display: none;}
 .menu li {padding: 0; display: inline;}
-.menu li a {font-size: 1em; font-weight: 400; padding: 15px; font-size: 0.7rem;}
+.menu li a {font-size: 1em; font-weight: 400; margin-right: 15px; font-size: 0.7rem;}
+
+@media(min-width: 90rem) {.flex_box_item{ height: 190px !important;}
+
+@media(min-width: 160rem) {.content{width: 55%; margin: 0 auto;} .flex_box_item{ height: 212px !important;}
 
 }
