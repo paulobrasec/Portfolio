@@ -17,36 +17,38 @@ header {width: 100%; padding:5%;}
 .btn-close, .in, .ig {width: 19px; height: 19px; cursor: pointer; margin: 5%; background: url('../img/close.svg') 0 0 no-repeat;}
 .menu ul {max-width: 100%; text-align: center;} 
 .menu li {padding: 3%;}
-.menu li a {font-size: 1rem; font-weight: 300; color: #000; text-transform: uppercase}
+.menu li a {font-size: 0.8rem; font-weight: 400; color: #000; text-transform: uppercase}
 hr{ background-color: #ccc; height: 1px; margin: 20% 0; opacity: 0.2;}
 .social{ display: flex; flex-direction: row; justify-content: space-around;}
 .in {cursor: pointer; margin: 0 auto; background: url('../img/linkedin.svg') 0 0 no-repeat;;}
 .ig {cursor: pointer; margin: 0 auto; background: url('../img/instagram.svg') 0 0 no-repeat;}
 
 /* FOTOS */
-.gallery{ width: 100%; display: flex; flex-wrap: wrap;}
-.gallery li{ height: 215px; padding: 0px; margin: 1.5% 0 1.5% 0; background-clip: content-box; background-size: cover; background-position: center; flex-basis: 100%;}
-
-
 .flex_box{ display:flex; flex-wrap: wrap;}
-.flex_box_item{ width: 100%; background: url('img/foto.jpg') center center no-repeat; background-size: cover}
 
 /* BREAKPOINTS */
-@media(min-width: 20rem) {.content { width: 100%;}.flex_box_item{ height: 215px; flex-basis: 100%; margin-bottom: 4%}}
-@media(min-width: 33.75rem) {.flex_box_item{ height: 360px; flex-basis: 100%; margin-bottom: 4%;}}
-@media(min-width: 48rem) {.flex_box_item{ height: 255px; flex-basis: 48%; margin:1%;}}
+@media(min-width: 20rem) {.content { width: 100%;}.flex_box_item{ flex-basis: 100%; margin-bottom: 4%}}
+@media(min-width: 33.75rem) {.flex_box_item{ height: 360px !important; flex-basis: 100%; margin-bottom: 4%;}}
+@media(min-width: 48rem) {.flex_box_item{ height: 255px !important; flex-basis: 48%; margin:1%;}}
 @media(min-width: 64rem) {.content{ width: 82%; margin: 0 auto;} .flex_box_item{ height: 135px !important; flex-basis: 24%; margin: 0.5%} hr{ display: none;}
 
-header{ display: flex; justify-content: center; margin:0; padding: 4% 0; }
+header{ display: flex; justify-content: center; margin:0; padding: 4% 0;}
 .btn-menu {display: none;}
 .btn-close {display: none;}
 .menu {display: inline-flex !important; position: static;}
 .social {display: none;}
 .menu li {padding: 0; display: inline;}
-.menu li a {font-size: 1em; font-weight: 400; margin-right: 15px; font-size: 0.7rem;}
+.menu li a {font-size: 0.8em; font-weight: 400; margin-right: 15px; font-size: 0.7rem;}
 
-@media(min-width: 90rem) {.flex_box_item{ height: 190px}
+@media(min-width: 90rem) {.flex_box_item{ height: 190px !important;}
 
-@media(min-width: 160rem) {.content{width: 55%; margin: 0 auto;} .flex_box_item{ height: 212px}
+@media(min-width: 160rem) {.content{width: 55%; margin: 0 auto;} .flex_box_item{ height: 212px !important;}}
 
-}
+
+/* SECTION */
+section {width: 35%; display: flex; flex-direction: column; margin: 0 80px;}
+p {font-size: 14px; font-size: 0.875rem; margin-top: 1rem; margin-bottom: 1rem; text-align: justify;}
+p:nth-child(1){margin-top: 0;}
+@media (max-width: 700px) {section {width: 85%; margin: auto;}}
+
+
