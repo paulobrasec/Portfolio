@@ -24,15 +24,19 @@ hr{ background-color: #ccc; height: 1px; margin: 20% 0; opacity: 0.2;}
 .ig {cursor: pointer; margin: 0 auto; background: url('../img/instagram.svg') 0 0 no-repeat;}
 
 /* FOTOS */
-.flex_box{ display:flex; flex-wrap: wrap;}
+.flex_box{ display:flex; flex-wrap: wrap; margin-bottom: 8% !important;}
+
+/* Página sobre */
 
 section p{text-align: justify; margin-bottom: 1.5rem; font-weight: 300;}
+
+/* Página sobre */   
 
 /* BREAKPOINTS */
 @media(min-width: 20rem) {.content { width: 100%;}.flex_box_item{ flex-basis: 100%; margin-bottom: 4%} section{ padding: 0 5%;}}
 @media(min-width: 33.75rem) {.flex_box_item{ height: 360px !important; flex-basis: 100%; margin-bottom: 4%;}}
 @media(min-width: 48rem) {.flex_box_item{ height: 255px !important; flex-basis: 48%; margin:1%;}}
-@media(min-width: 64rem) {.content{ width: 82%; margin: 0 auto;} .flex_box_item{ height: 135px !important; flex-basis: 24%; margin: 0.5%} hr{ display: none;} .text-padding { padding: 0;} .articles{width: 50%; margin: 0;}
+@media(min-width: 64rem) {.content{ width: 82%; margin: 0 auto;} .flex_box_item{ height: 135px !important; flex-basis: 24%; margin: 0.5%} hr{ display: none;} /* Página Sobre */ .text-padding { padding: 0;} .articles{width: 50%; margin: 0;} /* Página Sobre */
 
 header{ display: flex; justify-content: center; margin:0; padding: 4% 0;}
 .btn-menu {display: none;}
@@ -45,13 +49,5 @@ header{ display: flex; justify-content: center; margin:0; padding: 4% 0;}
 @media(min-width: 90rem) {.flex_box_item{ height: 190px !important;}}
 
 @media(min-width: 160rem) {.content{width: 55%; margin: 0 auto;} .flex_box_item{ height: 212px !important;}}
-
-
-/* SECTION
-section {width: 35%; display: flex; flex-direction: column; margin: 0 80px;}
-p {font-size: 14px; font-size: 0.875rem; margin-top: 1rem; margin-bottom: 1rem; text-align: justify;}
-p:nth-child(1){margin-top: 0;}
-@media (max-width: 700px) {section {width: 85%; margin: auto;}}
-*/
 
 
