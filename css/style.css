@@ -35,8 +35,8 @@ section p{text-align: justify; margin-bottom: 1.5rem; font-weight: 300;}
 /* BREAKPOINTS */
 @media(min-width: 20rem) {.content { width: 100%;}.flex_box_item{ flex-basis: 100%; margin-bottom: 4%} section{ padding: 0 5%;} footer ul, footer h3{margin: 0; margin: 0 auto 2.5% auto;}}
 @media(min-width: 33.75rem) {.flex_box_item{ height: 360px !important; flex-basis: 100%; margin-bottom: 4%;} footer ul, footer h3{margin: 0 0 2.5% 0 !important;}}
-@media(min-width: 48rem) {.flex_box_item{ height: 255px !important; flex-basis: 48%; margin:1%;}}
-@media(min-width: 64rem) {.content{ width: 82%; margin: 0 auto;} .flex_box_item{ height: 135px !important; flex-basis: 24%; margin: 0.5%} hr{ display: none;} /* Página Sobre */ .text-padding { padding: 0;} .articles{width: 50%; margin: 0;} /* Página Sobre */
+@media(min-width: 48rem) {.flex_box_item{ height: 255px !important; flex-basis: 48%; margin:1%;} /* Footer */ .footer-bottom{width: 100%; position: absolute; bottom: 0;}} /* Footer */
+@media(min-width: 64rem) {.content{ width: 82%; margin: 0 auto;} .flex_box_item{ height: 135px !important; flex-basis: 24%; margin: 0.5%} hr{ display: none;} /* Página Sobre */ .text-padding { padding: 0;} .articles{width: 50%; margin: 0;}} /* Página Sobre */
 
 header{ display: flex; justify-content: center; margin:0; padding: 4% 0;}
 .btn-menu {display: none;}

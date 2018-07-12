@@ -11,19 +11,10 @@
 		<meta name="robots" content="index, follow">
 		<meta name="author" content="Paulo Santos">
 		<link rel="stylesheet" href="css/style.css">
-
-		<!-- animsition.css -->
-		<link rel="stylesheet" href="../dist/css/animsition.min.css">
-		<!-- jQuery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<!-- animsition.js -->
-		<script src="../dist/js/animsition.min.js"></script>
 	
 	</head>
 
 	<body>
-
-	<div class="animsition" class="animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="1000" data-animsition-out-class="fade-out" data-animsition-out-duration="800">
 
 		<header>
 
@@ -44,8 +35,10 @@
 								<hr>
 					
 								<div class="social">
-									<li class="in"><a href="http://linkedin.com/in/paulobrasec" target="_blank"></a></li>
-									<li class="ig"><a href="http://instagram.com/paulobrasec" target="_blank"></a></li>
+
+									<li><a href="http://linkedin.com/in/paulobrasec" target="_blank"><div class="in"></div></a></li>
+									<li><a class="ig" href="http://instagram.com/uxpaulo" target="_blank"><div class="ig"></div></a></li>
+									
 								</div>
 									
 							</ul>
@@ -95,55 +88,26 @@
 
 		</script>
 
-		<!-- script do page transitions -->
+		<div class="footer-bottom">
 
-			<script>
+			<footer class="content">
 
-				$(document).ready(function() {
- 				$(".animsition").animsition({
-    			inClass: 'fade-in-left',
-    			outClass: 'fade-out-left',
-    			inDuration: 1500,
-    			outDuration: 800,
-    			linkElement: '.animsition-link',
-    			// e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-    			loading: true,
-    			loadingParentElement: 'body', //animsition wrapper element
-   				loadingClass: 'animsition-loading',
-    			loadingInner: '', // e.g '<img src="loading.svg" />'
-    			timeout: false,
-    			timeoutCountdown: 5000,
-    			onLoadEvent: true,
-    			browser: [ 'animation-duration', '-webkit-animation-duration'],
-    			// "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-    			// The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-    			overlay : false,
-    			overlayClass : 'animsition-overlay-slide',
-    			overlayParentElement : 'body',
-    			transition: function(url){ window.location.href = url; }
-  				});
-				});
+				<h3>&copy; 2018 | Paulo Santos</h3>
 
-		</script>
-
-		<footer class="content">
-
-			<h3>&copy; 2018 | Paulo Santos</h3>
-
-			<ul>
+				<ul>
 					
-				<li><a href="pdf/curriculo-paulo-santos.pdf" target="_blank">Currículo</a></li>
+					<li><a href="pdf/curriculo-paulo-santos.pdf" target="_blank">Currículo</a></li>
 
-				<li><a href="http://github.com/paulobrasec" target="_blank">Github</a></li>
+					<li><a href="http://github.com/paulobrasec" target="_blank">Github</a></li>
 
-				<li><a href="https://api.whatsapp.com/send?phone=5519996901127&text=Como%20vai%20Paulo%3F%20Vamos%20falar%20de%20trabalho%3F">Whatsapp</a></li>
+					<li><a href="https://api.whatsapp.com/send?phone=5519996901127&text=Como%20vai%20Paulo%3F%20Vamos%20falar%20de%20trabalho%3F">Whatsapp</a></li>
 									
-			</ul>
+				</ul>
 		
 
-		</footer>
+			</footer>
 
-	</div>
+		</div>
 
 	</body>
 
