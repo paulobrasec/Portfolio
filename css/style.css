@@ -50,6 +50,11 @@ header{ display: flex; justify-content: center; margin:0; padding: 4% 0;}
 
 @media(min-width: 160rem) {.content{width: 55%; margin: 0 auto;} .flex_box_item{ height: 212px !important;}}
 
+/* Página contato */
+
+.spacing {width: 100%; height: 100px;}
+section .articles p a {text-decoration: none; cursor: pointer; font-size: 1rem; color:#000;}
+
 
 /* Footer */
 
