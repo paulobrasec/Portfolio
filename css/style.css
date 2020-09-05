@@ -28,7 +28,7 @@ hr{ background-color: #ccc; height: 1px; margin: 20% 0; opacity: 0.2;}
 
 /* Página sobre */
 
-section p{text-align: justify; margin-bottom: 1.5rem; font-weight: 300;}
+section p{text-align: left; line-height:50%; margin-bottom: 1.5rem; font-weight: 300;}
 
 /* Página sobre */   
 
